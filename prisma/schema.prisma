@@ -9,6 +9,17 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mongodb"
   url      = env("DATABASE_URL")
+}
+
+model Note {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId // so here we tell mongo db this is not a usualy id that should be following a certin schema here
+  title     String
+  content   String?
+  userId    String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("notes")
 }
