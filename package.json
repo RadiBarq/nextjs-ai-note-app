@@ -14,6 +14,7 @@
     "@hookform/resolvers": "^3.3.4",
     "@pinecone-database/pinecone": "^2.0.1",
     "@prisma/client": "^5.10.2",
+    "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
     "ai": "^3.0.2",
